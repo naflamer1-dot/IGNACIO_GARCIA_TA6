@@ -84,27 +84,3 @@ Desde la carpeta del proyecto:
 Las pruebas comprueban los ejemplos, límites de aprobación, rangos inválidos,
 campos vacíos, valores no finitos, nombres repetidos, tildes, empates y rutas.
 
-## Entrega y GitHub
-
-El ZIP es el proyecto para Blackboard. La entrega también requiere publicar el
-código en tu cuenta de GitHub y adjuntar su URL real en ENLACE_GITHUB.txt.
-El proyecto aún no se ha publicado. No entregues ese TXT con el aviso pendiente.
-
-1. Crea un repositorio vacío en tu cuenta, por ejemplo `evaluacion3-flask`.
-2. Desde esta carpeta ejecuta (reemplaza TU_USUARIO por tu usuario real):
-
-```text
-git init
-git add .
-git commit -m "Evaluacion 3 Flask - Ignacio Garcia"
-git branch -M main
-git remote add origin https://github.com/TU_USUARIO/evaluacion3-flask.git
-git push -u origin main
-```
-
-3. Reemplaza el contenido de ENLACE_GITHUB.txt por la URL del repositorio creado.
-4. Actualiza el archivo en GitHub y comprime la carpeta sin `.venv`, `.git` ni
-   `__pycache__`. Entrega el ZIP y el TXT del enlace; no solo el enlace.
-
-Documentación: [Flask Quickstart](https://flask.palletsprojects.com/en/stable/quickstart/)
-y [entornos virtuales e instalación](https://flask.palletsprojects.com/en/stable/installation/).
