@@ -1,0 +1,8 @@
+{% extends 'base.html' %}
+{% block title %}Menú principal{% endblock %}
+{% block content %}
+<nav class="menu" aria-label="Menú principal">
+  <a class="boton ejercicio" href="{{ url_for('ejercicio1') }}">Ejercicio 1</a>
+  <a class="boton ejercicio" href="{{ url_for('ejercicio2') }}">Ejercicio 2</a>
+</nav>
+{% endblock %}

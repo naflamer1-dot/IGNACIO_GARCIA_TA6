@@ -1,0 +1,29 @@
+* { box-sizing: border-box; }
+body { margin: 0; min-height: 100vh; background: #f1f1f1; color: #161616; font-family: Arial, sans-serif; }
+.contenedor { min-height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 32px 16px; }
+.menu { display: flex; flex-direction: column; gap: 20px; }
+.boton { display: inline-block; border: 0; border-radius: 4px; background: #007bff; color: white; padding: 10px 16px; font: inherit; font-size: 14px; cursor: pointer; }
+.boton:hover { background: #005fcb; }
+.boton:focus-visible, a:focus-visible { outline: 3px solid #172e56; outline-offset: 4px; }
+.ejercicio { width: 185px; padding: 20px 16px; text-align: center; border-radius: 10px; font-family: Georgia, serif; font-size: 24px; }
+.tarjeta { width: 100%; max-width: 390px; padding: 24px; background: white; border-radius: 7px; box-shadow: 0 2px 5px #0003; }
+h1 { margin: 10px 0 22px; font-size: 24px; line-height: 1.25; }
+.campo { margin-bottom: 16px; }
+label { display: block; font-weight: 700; margin-bottom: 6px; }
+input { width: 100%; min-width: 0; height: 39px; padding: 8px 10px; border: 1px solid #c7c7c7; border-radius: 3px; font: inherit; background: #fff; }
+input:focus { outline: 2px solid #007bff; outline-offset: 1px; }
+.nombres { text-align: center; max-width: 430px; }
+.nombres label { font-weight: 400; }
+.resultado { margin-top: 20px; line-height: 1.5; overflow-wrap: anywhere; }
+.resultado p { margin: 9px 0; }
+.estado { font-weight: bold; }
+.aprobado { color: #17633d; }
+.reprobado, .error { color: #a82020; }
+.error { line-height: 1.5; }
+.ayuda { font-size: 12px; line-height: 1.5; color: #595959; margin: 20px 0 12px; }
+.volver { font-size: 13px; color: #0059b8; }
+footer { text-align: center; font-size: 13px; color: #4c4c4c; margin-top: 28px; }
+footer span { display: block; font-size: 11px; margin-top: 5px; }
+footer a { color: inherit; text-underline-offset: 3px; }
+.tarjeta > p { line-height: 1.5; }
+@media (max-width: 420px) { .contenedor { padding: 20px 14px; } .tarjeta { padding: 20px; } h1 { font-size: 22px; } }

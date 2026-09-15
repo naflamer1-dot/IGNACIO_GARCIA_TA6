@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block title %}Información del trabajo{% endblock %}
+{% block content %}
+<section class="tarjeta">
+  <h1>Información del trabajo</h1>
+  <p><strong>Estudiante:</strong> Ignacio Garcia</p>
+  <p>Evaluación 3 de Programación Web. Semana 6.</p>
+  <p>Aplicación desarrollada con Python, Flask, HTML y CSS.</p>
+  <p>El Ejercicio 1 calcula el promedio de tres notas y determina la aprobación según la asistencia.</p>
+  <p>El Ejercicio 2 compara tres nombres y muestra el que tiene más letras.</p>
+  <a class="volver" href="{{ url_for('index') }}">Volver al menú</a>
+</section>
+{% endblock %}

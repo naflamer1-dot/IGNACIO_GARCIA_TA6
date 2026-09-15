@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% block title %}Evaluación 3{% endblock %} · Ignacio Garcia</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <main class="contenedor">
+    {% block content %}{% endblock %}
+    <footer><a href="{{ url_for('acerca') }}">Ignacio Garcia</a> <span>Programación Web · Semana 6</span></footer>
+  </main>
+</body>
+</html>

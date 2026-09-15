@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% block title %}Formulario de Notas{% endblock %}
+{% block content %}
+<section class="tarjeta">
+  <h1>Formulario de Notas</h1>
+  <form method="post" action="{{ url_for('ejercicio1') }}">
+    {% for i in range(1, 4) %}
+    <div class="campo">
+      <label for="nota{{ i }}">Nota {{ i }}:</label>
+      <input id="nota{{ i }}" name="nota{{ i }}" type="number" min="10" max="70"
+             step="any" value="{{ datos['nota' ~ i] }}" required>
+    </div>
+    {% endfor %}
+    <div class="campo">
+      <label for="asistencia">Asistencia (%):</label>
+      <input id="asistencia" name="asistencia" type="number" min="0" max="100"
+             step="any" value="{{ datos.asistencia }}" required>
+    </div>
+    <button class="boton" type="submit">Enviar</button>
+  </form>
+  {% if error %}<p class="error" role="alert">{{ error }}</p>{% endif %}
+  {% if resultado %}
+  <div class="resultado" role="status">
+    <p>Promedio: <strong>{{ resultado.promedio }}</strong></p>
+    <p class="estado {{ 'aprobado' if resultado.aprobado else 'reprobado' }}">{{ resultado.estado }}</p>
+  </div>
+  {% endif %}
+  <p class="ayuda">Notas de 10 a 70. Para aprobar: promedio mínimo 40 y asistencia mínima 75 %. El estado usa el promedio sin redondear.</p>
+  <a class="volver" href="{{ url_for('index') }}">Volver al menú</a>
+</section>
+{% endblock %}
